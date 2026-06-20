@@ -43,4 +43,40 @@ Deutsche Bank, and macro hedge funds (Brevan Howard, BlueCrest).
 ---
 
 ## Project Structure
+fixed-income-rv-swap-butterfly/
+├── fixed_income_rv_main.ipynb    ← Full Colab notebook (15 cells)
+├── outputs/
+│   ├── fixed_income_rv_report.xlsx
+│   └── charts/
+│       ├── swap_spreads.html
+│       ├── butterfly_signals.html
+│       ├── carry_rolldown.html
+│       ├── backtest_pnl.html
+│       └── xccy_differentials.html
+└── README.md
+
+---
+
+## Methodology Note
+
+Swap spreads post-2016 use a proxy spread over Treasuries, clearly
+documented as an approximation due to FRED DSWP series discontinuation.
+True XCCY basis requires FX forward rates (Bloomberg/Refinitiv);
+rate differentials used here capture dominant regime signals.
+Limitations are explicitly modelled, not papered over.
+
+---
+
+## Academic Reference
+
+Duarte, J., Longstaff, F., Yu, F. (2007). *Risk and Return in Fixed-Income
+Arbitrage: Nickels in Front of a Steamroller?* Review of Financial Studies.
+
+---
+
+## Skills Demonstrated
+
+`Swap curve bootstrapping` `Fixed income RV` `DV01-neutral positioning`
+`Carry/roll-down` `Z-score mean reversion` `XCCY basis` `FRED API`
+`ECB API` `BoE API` `pandas` `numpy` `scipy` `plotly` `openpyxl`
 
